@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    src: url('../../fonts/Gilroy-Regular.woff'); 
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    src: url('../../fonts/Gilroy-Bold.woff'); 
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 600;
+    src: url('../../fonts/Gilroy-SemiBold.woff'); 
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 300;
+    src: url('../../fonts/Gilroy-Light.woff'); 
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 200;
+    src: url('../../fonts/Gilroy-Thin.woff'); 
+}
+
+
+
+
+@mixin Gilroy( $fs, $fw, $lh,) {
+    font-family: 'Gilroy';
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+@mixin flex($fd, $jc, $ai, $gp) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gp;
+}

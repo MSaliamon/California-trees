@@ -1,0 +1,46 @@
+
+@import '../../../scss/mixin';
+@import '../../../scss/reset';
+@import '../../../scss/vars';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    src: url('../../fonts/Gilroy-Regular.woff'); 
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    src: url('../../fonts/Gilroy-Bold.woff'); 
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 600;
+    src: url('../../fonts/Gilroy-SemiBold.woff'); 
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 300;
+    src: url('../../fonts/Gilroy-Light.woff'); 
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 200;
+    src: url('../../fonts/Gilroy-Thin.woff'); 
+}
+
+.nav {
+    &__list {
+        @include flex(row, center, center, 24px);
+    }
+    &__item {
+        @include flex(row, center, center, 4);
+    }
+    &__link {
+        @include Gilroy(16px, 400, 20px);
+        color: $First-color;
+    }
+}

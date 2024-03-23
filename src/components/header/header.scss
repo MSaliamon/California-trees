@@ -1,0 +1,53 @@
+
+@import '../../scss/mixin';
+@import '../../scss/reset';
+@import '../../scss/vars';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    src: url('../../fonts/Gilroy-Regular.woff'); 
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    src: url('../../fonts/Gilroy-Bold.woff'); 
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 600;
+    src: url('../../fonts/Gilroy-SemiBold.woff'); 
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 300;
+    src: url('../../fonts/Gilroy-Light.woff'); 
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 200;
+    src: url('../../fonts/Gilroy-Thin.woff'); 
+}
+
+
+.header {
+    padding: 44px 195px;
+    @include flex(row, space-between, center, 0);
+    background-color: $background-color;
+    &-container {
+        @include flex(row, center, center, 114px);
+    }
+    &-container2 {
+        @include flex(row, center, center, 23px);
+    }
+    &__btn {
+        @include Gilroy(16px, 400, 20px);
+        box-sizing: border-box;
+        border: 1px solid $green-color;
+        padding: 10px 55px 10px 55px;
+        color: $green-color;
+    }
+}
